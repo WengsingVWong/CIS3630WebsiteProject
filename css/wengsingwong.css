@@ -1,0 +1,656 @@
+/* Reset defaults */
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Normal links */
+.normallink:link {
+    color: blue;
+    text-decoration: underline;
+}
+
+.normallink:visited {
+    color: #1c910d;
+    /*text-decoration: underline;*/
+}
+
+.normallink:hover {
+    color: red;
+    background-color: yellow;
+    /*text-decoration: underline;*/
+}
+
+.normallink:active {
+    color: maroon;
+    /*text-decoration: underline;*/
+}
+
+/* Site Banner */
+#wwbanner {
+    border-bottom: 3px solid black;
+    padding: 2.5vw 0;
+    background-color: #c6e7f2;
+    margin-bottom: 10px;
+}
+
+#wwbannertext {
+    text-align: center;
+    font-size: 4.5vw;
+    font-family: verdana, sans-serif;
+    color: darkgreen;
+    margin: 0;
+    line-height: normal;
+}
+
+/* Navigation Menu Stuff */
+.standardnavigation {
+    margin: 0;
+    padding: 0;
+    display: block;
+    text-align: center;
+    list-style-type: none;
+    background-color: #28bf28;
+    overflow: hidden;
+}
+
+.smallnavigation {
+    display: none;
+}
+
+.navlink {
+    display: inline-block;
+}
+
+ul {
+    line-height: 1.6;
+    font-family: arial, sans-serif;
+}
+
+.notactive, .active {
+    display: block;
+    padding: 1.2vw;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.6vw;
+}
+
+.notactive:hover {
+    background-color: #024a02;
+    color: white;
+}
+
+.notactive {
+    color: black;
+}
+
+.active {
+    background-color: #024a02;
+    color: white;
+}
+
+/* Div containing all other content on page */
+.contentdiv {
+    margin: 10px auto;
+    width: 80%;
+    background-color: lightblue;
+    border: 2px solid black;
+    padding: 15px;
+    overflow: hidden;
+}
+
+/* Headings */
+h1, h2 {
+    color: #0e6192;
+    text-align: center;
+}
+
+h1 {
+    font-size: 32px;
+    font-family: arial black, sans-serif;
+    margin: 5px auto 20px auto;
+}
+
+h2 {
+    font-size: 24px;
+    font-family: arial, sans-serif;
+    margin: 15px auto;    
+}
+
+/* Welcome Video Message */
+#welcomevid {
+    margin: auto;
+    display: block;
+    max-width: 500px;
+    border: 1px solid black;
+}
+
+/* Welcome message */
+.welcome {
+    margin: 10px auto 0 auto;
+    display: block;
+}
+
+.welcometext {
+    margin: 0;
+}
+
+/* Normal paragraph text */
+p {
+    font-family: arial, sans-serif;
+    line-height: 1.6;
+    text-align: left;
+    font-size: 16px;
+    color: black;
+    margin: 10px auto;
+}
+
+/* Song lyric text */
+.songlyrics {
+    font-family: "Courier New", monospace;
+}
+
+/* Italicized text */
+.italicstyle {
+    font-style: italic;
+}
+
+/* Text styled to indicate code text */
+.codeblock {
+    font-size: inherit;
+    font-family: courier;
+    background: lightgray;
+}
+
+ /* Footer text */
+#copyright {
+    text-align: center;
+    color: darkgreen;
+    font-family: arial, sans-serif;
+    margin-bottom: 10px;
+}
+
+/* Caption text for pics */
+.captiontext {
+    text-align: center;
+    margin: 5px 0;
+    font-weight: bold;
+    word-wrap: break-word;
+}
+
+/* Text on Table of Faves page */
+.addfavestext {
+    text-align: center;
+    font-size: 20px;
+}
+
+/* The last paragraph and unordered list on a page */
+p:last-child, ul:last-child {
+    margin-bottom: 0;
+}
+
+/* Image styling */
+img {
+    border: 1px solid green;
+    margin: auto;
+    display: block;
+}
+
+/* Pics floated left */
+.leftpicandcaption {
+    float: left;
+    margin-right: 15px;
+}
+
+/* Centered pics */
+.centerpicandcaption {
+    display: block;
+    margin: auto;
+}
+
+/* Pics floated right */
+.rightpicandcaption {
+    width: 100%;
+    float: right;
+    margin-left: 15px;
+}
+
+/* Making sure captions stay intact */
+.leftpicandcaption, .centerpicandcaption, .rightpicandcaption {
+    word-break: normal;
+    word-wrap: break-word;
+}
+
+/* Div containing the Artemis Fowl pic */
+.artemisfowl3 {
+    width: 197px;
+}
+
+/* Div containg the Pandemic pic */
+.pandemic {
+    width: 219px;
+}
+
+/* Div containing the SoulSilver pic */
+.soulsilver {
+    width: 300px;
+}
+
+/* Horizontal line separating content and footer */
+hr {
+    border-top: 3px solid black;
+}
+
+/* List of linked assignments */
+.assignmentlist {
+    margin: 0;
+    padding: 0;
+    display: block;
+    text-align: center;
+    list-style-type: none;
+    overflow: hidden;
+}
+
+.assignmentlistli {
+    display: inline-block;
+    margin: 0 25px;
+}
+
+.assignmentlisttext {
+    margin: 0 0 5px 0;
+    font-family: arial, sans-serif;
+    color: darkgreen;
+    font-size: 18px;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.assignmentlink {
+    display: block;
+    margin: auto;
+    max-width: 250px;
+    max-height: 250px;
+    width: 17.5vw;
+    height: 17.5vw;
+}
+
+.assignmentimage {
+    display: inherit;
+    margin: inherit;
+    max-width: inherit;
+    max-height: inherit;
+    width: inherit;
+    height: inherit;
+}
+
+/* Opacity effect for linked images */
+.opacityhover:hover {
+    opacity: 0.625;
+}
+
+/* Professional headshot on About Me page */
+#headshotaboutme {
+    width: 25%;
+    height: 25%;
+    max-width: 175px;
+    margin-top: 15px;
+}
+
+/* Chessboard */
+#chessborder {
+    width: 86.92%;
+    height: 69.533vw;
+    max-width: 1200px;
+    max-height: 1200px;
+    border: 10px solid black;
+    margin: 20px auto 0 auto;
+    display: block;
+}
+
+.white, .green {
+    max-width: 150px;
+    max-height: 150px;
+    width: 12.5%;
+    height: 12.5%;
+   float: left;
+}
+
+.white {
+    background-color: white;
+}
+
+.green {
+    background-color: green;
+}
+
+#clearfix {
+    clear: both;
+}
+
+.chessimg {
+    width: 90%;
+    height: 90%;
+    margin: 5%;
+    border: none;
+}
+
+/* Anchor tag containing a link to Nintendo's homepage */
+.evallink {
+    display: block;
+    width: 50vw;
+    max-width: 618px;
+    margin-top: 15px;
+}
+
+/* Screenshot of Nintendo's homepage */
+#nintendohomepage {
+    display: inherit;
+    margin: inherit;
+    max-width: inherit;
+    max-height: inherit;
+    width: inherit;
+    height: inherit;
+}
+
+/* Table of Faves */
+.tableoffaves {
+    border-collapse: collapse;
+    border: 2px solid black;
+    margin: auto;
+}
+
+.tableoffavesheading {
+    background-color: #024a02;
+    color: white;
+}
+
+.tableoffavesheading, .tableoffavesrow {
+    font-size: 125%;
+    font-family: arial, sans-serif;
+}
+
+.tableoffavesrow:nth-child(even) {
+    background-color: #38aff5;
+}
+
+.tableoffavesdata {
+    color: black;
+}
+
+.tableoffavesheading, .tableoffavesrow, .tableoffavesdata {
+    padding: 10px;
+}
+
+/* Add Your Faves form */
+.formcontainer {
+    padding: 0 10px 10px 10px;
+}
+
+.col25, .col75 {
+    float: left;
+    margin: 5px 0;
+}
+
+.col25 {
+    width: 25%;
+}
+
+.col75 {
+    width: 75%;
+}
+
+.row {
+    width: 100%;
+}
+
+.row:after {
+    clear: both;
+}
+
+/* Form label text */
+.labeltext {
+    display: inline-block;
+    font-family: arial, sans-serif;
+    font-size: 100%;
+    color: black;
+    margin: 8px 5px 0 0;
+}
+
+/* Input fields on Add Your Faves form */
+.favefield {
+    width: 75%;
+    padding: 5px 10px;
+    font-family: arial, sans-serif;
+    font-size: 16px;
+    border: 3px solid gray;
+    outline: none;
+}
+
+.favefield:focus {
+    border: 3px solid #28bf28;
+}
+
+/* Form submit button */
+.favesubmit {
+    font-size: 16px;
+    font-family: arial, sans-serif;
+    text-align: center;
+    padding: 5px 10px;
+    color: black;
+    background-color: #28bf28;
+    cursor: pointer;
+    border: none;
+    margin: 15px auto 0 auto;
+}
+
+.favesubmit:hover {
+    background-color: darkgreen;
+    color: white;
+}
+
+@media only screen and (max-width: 800px) {
+    /* Make banner and text a static size */
+    #wwbanner {
+        padding: 20px 0;
+    }
+    #wwbannertext {
+        font-size: 36px;
+    }
+
+    /* Disable standard navigation menu on smaller screens */
+    .standardnavigation {
+        display: none;
+    }
+
+    /* Enable normal and assignment dropdown menus on smaller screens */
+    .smallnavigation {
+        display: block;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #28bf28;
+        width: 100%;
+    }
+
+    .dropdown {
+        margin: auto;
+        display: block;
+        text-align: center;
+    }
+    
+    .dropdown {
+        width: 200px;
+    }
+    
+    .amdropdown {
+        width: 250px;
+    }
+    
+    .active, .notactive, .dropbtn, .amlink {
+        text-align: center;
+        font-size: 22.4px;
+        text-decoration: none;
+        display: inline-block;
+    }
+    
+    .notactive, .dropbtn, .amlink {
+        color: black; 
+    }
+    
+    .active, .notactive, .amlink {
+        padding: 9.6px;
+    }
+    
+    .dropbtn {
+        padding: 9.6px 72px; 
+    }
+
+    .amdropbtn {
+        padding: 9.6px 75px; 
+    }
+      
+    .dropdown:hover .dropbtn {
+        background-color: #158515;
+        color: white;
+    }
+      
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #28bf28;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    
+    .dropdown-content {
+        min-width: 200px;
+    }
+    
+    .amdropdown-content, .amlink {
+        min-width: 0;
+        max-width: 250px;
+    }
+      
+    .dropdown-content a {
+        display: block;
+    }
+
+    .dropdown-content a.active, .amlink:hover {
+        color: white;
+    }
+      
+    .dropdown-content a:hover {
+        background-color: #024a02;
+    }
+      
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    
+    /* Increase heading size slightly for smaller screens */
+    h1 {
+        font-size: 34px;
+    }
+    
+    h2 {
+        font-size: 26px;
+    }
+    
+    /* Make video size responsive on smaller screens */
+    #welcomevid {
+        width: 78.125%;
+        height: 78.125%;
+    }
+    
+    /* Adjust paragraph text and unordered lists for smaller screens */
+    p {
+        margin: 15px auto;
+    }
+    
+    p, .uolist {
+        line-height: 2.0;
+        font-size: 20px;
+    }
+    
+    .addfavestext {
+        font-size: 22px;
+    }
+    
+    /* Center left-aligned and right-aligned pics on smaller screens */
+    .leftpicandcaption, .rightpicandcaption {
+        float: none;
+        margin: auto;
+        display: block;
+        word-break: normal;
+    }
+    
+    /* Make all pics responsive on smaller screens */
+    #owlcityfireflies, #owlcitycinematic {
+        width: 60%;
+        height: 60%;
+    }
+    
+    .artemisfowl3, #artemisfowl3id {
+        width: 70%;
+    }
+    
+    .pandemic, #pandemicid, .soulsilver, #soulsilverid {
+        width: 75%;
+    }
+    
+    /* Adjust list of linked assignments to be one item per line on smaller screens amd increase the size of the images */
+    .assignmentlistli {
+        display: block;
+        margin: 0 0 15px 0;
+    }
+
+    .assignmentlisttext {
+        font-size: 22px;
+    }
+
+    .assignmentlink {
+        max-width: 275px;
+        max-height: 275px;
+        width: 50vw;
+        height: 50vw;
+        padding: 0;
+    }
+    
+    /* Increase size of headshot on smaller screens */
+    #headshotaboutme {
+        width: 50%;
+        max-width: none;
+    }
+
+    /* Increase size of div and screenshot on smaller screens and add some margin above them on smaller screens */
+    .evallink {
+        margin-top: 15px;
+        width: 62.5vw;
+    }
+
+    /* Increase font size in Table of Faves on smaller screens */
+    .tableoffavesheading, .tableoffavesrow, .tableoffavesdata {
+    font-size: 3vw;
+    }
+    
+    /* Increase size of label text, field text, and Submit button text on Add Your Faves form on smaller screens */
+    .labeltext, .favefield, .favesubmit {
+        font-size: 125%;
+    }
+}
+
+/* Format label and field to each be on a separate line on smaller screens */
+@media only screen and (max-width: 910px) {
+    .col25, .col75 {
+        width: 100%;
+    }
+}
+
+/* Remove navigation menus when printing any page on the site */
+@media print {
+    .printing {
+        display: none;
+    }
+}
