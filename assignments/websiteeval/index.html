@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Website Evaluation</title>
+    <meta name="Website Evaluation" content="An evaluation of the Nintendo homepage's HTML and Search Engine Optimization by Wengsing Wong">
+
+    <!-- Favicon -->
+    <link href="/media/favicon.png" rel="icon" type="image/x-icon" />
+    
+    <!-- CSS -->
+    <link href="/css/wengsingwong.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- BANNER -->
+    <header id="wwbanner">
+        <p id="wwbannertext">
+            Wengsing's World
+        </p>
+    </header>
+    
+    <!-- STANDARD MENU -->
+    <ul class="standardnavigation printing">
+        <li class="navlink"><a href="/" target="_self" class="notactive">Home</a></li>
+        <li class="navlink"><a href="/favmusic/" target="_self" class="notactive">Musical Artist</a></li>
+        <li class="navlink"><a href="/favbooks/" target="_self" class="notactive">Book Series</a></li>
+        <li class="navlink"><a href="/favgames/" target="_self" class="notactive">Games</a></li>
+        <li class="navlink"><a href="/assignments/" target="_self" class="active">Assignments</a></li>
+        <li class="navlink"><a href="/faves/" target="_self" class="notactive">Table of Faves</a></li>
+        <li class="navlink"><a href="http://china2020coronavirus.com/" target="_blank" class="notactive">Angela Zhu</a></li>
+    </ul>
+    
+    <!-- DROPDOWN MENU FOR SMALLER SCREENS -->
+    <ul class="smallnavigation printing">
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Menu</a>
+            <div class="dropdown-content">
+                <a href="/" target="_self" class="notactive">Home</a>
+                <a href="/favmusic/" target="_self" class="notactive">Musical Artist</a>
+                <a href="/favbooks/" target="_self" class="notactive">Book Series</a>
+                <a href="/favgames/" target="_self" class="notactive">Games</a>
+                <a href="/assignments/" target="_self" class="active">Assignments</a>
+                <a href="/faves/" target="_self" class="notactive">Table of Faves</a>
+                <a href="http://china2020coronavirus.com/" target="_blank" class="notactive">Angela Zhu</a>
+            </div>
+        </li>
+    </ul>    
+    
+    <!-- CONTENT DIV -->
+    <div class="contentdiv">
+        <h1>
+            Website Evaluation of <a href="https://www.nintendo.com" target="_blank" class="normallink">nintendo.com</a>
+        </h1>
+
+        <!-- SECONDARY NAVIGATION MENU FOR ASSIGNMENTS -->
+        <ul class="standardnavigation printing">
+            <li class="navlink"><a href="../chess/" target="_self" class="notactive">Previous Assignment (Chessboard)</a></li>
+            <li class="navlink"><a href="../aboutme/" target="_self" class="notactive">Next Assignment (About Me)</a></li>
+        </ul>
+    
+        <!-- SECONDARY DROPDOWN MENU FOR SMALLER SCREENS -->
+        <ul class="smallnavigation printing">
+            <li class="dropdown amdropdown">
+                <a href="javascript:void(0)" class="dropbtn amdropbtn">HW Menu</a>
+                <div class="dropdown-content amdropdown-content">
+                    <a href="../chess/" target="_self" class="amlink">Previous Assignment (Chessboard)</a>
+                    <a href="../aboutme/" target="_self" class="amlink">Next Assignment (About Me)</a>
+                </div>
+            </li>
+        </ul>    
+        
+        <!-- Screenshot of Nintendo Homepage -->
+        <a href="https://www.nintendo.com" target="_blank" class="evallink leftpicandcaption">
+            <img id="nintendohomepage" src="/media/Nintendo%20Homepage%20Screenshotv3.png" alt="Screenshot of Nintendo's homepage" class="opacityhover">
+        </a>
+    
+        <!-- First Section -->
+        <h2>
+            1 - HTML Markup
+        </h2>
+
+        <p> 
+            There are some issues with this site’s HTML markup. The first major issue is how a <span class="codeblock">div</span> element is used as the child of a <span class="codeblock">span</span> element eight times. This is an error because a block-level element (like a <span class="codeblock">div</span>) can contain both inline and other block-level elements, while an inline element (like a <span class="codeblock">span</span>) can only contain other inline elements. Another issue is the usage of square brackets in the <span class="codeblock">href</span> attribute of an <span class="codeblock">a</span> element, which the <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwww.nintendo.com%2F&showsource=yes" target="_blank" class="normallink">W3 Validator</a> states is not allowed. According to the <a href="https://www.ietf.org/rfc/rfc1738.txt" target="_blank" class="normallink">Internet Engineering Task Force (IETF)</a>, the square bracket characters are considered unsafe and should be encoded within URLs. A third issue is the repeated usage of the <span class="codeblock">itemprop</span> attribute without <a href="https://stackoverflow.com/questions/29123445/validation-error-the-itemprop-attribute-was-specified-but-the-element-is-not" target="_blank" class="normallink">specifying what types</a> <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/itemprop" target="_blank" class="normallink">these properties belong to</a>. It is especially concerning that the W3 Validator encountered this error 12 times.
+        </p>
+        <p>
+            This site’s HTML also contains several milder issues. For example, 10 different <span class="codeblock">script</span> tags contain the <span class="codeblock">type</span> attribute and the value <span class="codeblock">"text/javascript"</span>. In <a href="https://html.spec.whatwg.org/multipage/scripting.html#the-script-element" target="_blank" class="normallink">HTML5</a>, the default value for the <span class="codeblock">type</span> attribute is <span class="codeblock">"text/javascript"</span>, which makes its many inclusions within this site’s HTML unnecessary. In addition, seven different sections in the markup do not contain any headings, which hurts the accessibility of this website.
+        </p>
+        <p class="finalp">
+            To improve this site’s HTML markup, I would first change the <span class="codeblock">span</span> elements containing <span class="codeblock">div</span>s to <span class="codeblock">div</span> elements and revise the URL with square brackets to contain the encoded versions of square brackets. Next, I would use the <span class="codeblock">itemtype</span> attribute to describe what types the <span class="codeblock">itemprop</span> attributes belong to. Finally, I would eliminate the 10 redundancies of <span class="codeblock">type="type/javascript"</span> and add appropriate headings to the seven sections in the HTML. This would ensure the browser can download the HTML and render the page efficiently.
+        </p>
+    
+        <!-- Second Section -->
+        <h2>
+            2 - Search Engine Optimization
+        </h2>
+    
+        <p>
+            The most serious issue with this site’s search engine optimization (SEO) is its page speed. Page speed is important because not only is it factored into the page’s rankings in search engine results, but faster sites also improve the user experience and reduce the likelihood they will leave prematurely. One aspect slowing down this site’s loading speed is the lack of browser caching across all resources on the site. Caching is useful because it allows a browser to load a previously visited page faster by not having to re-download the same files from the page’s server. According to <a href="https://varvy.com/pagespeed/" target="_blank" class="normallink">varvy.com</a>, browser caching is not enabled for this domain or for third-party resources. A second factor in the site’s slower loading speed is its CSS files. When a browser accesses this site, it must retrieve and download five CSS files, three of which are larger than 90 kilobytes. There are also 36 instances where inline styling is used, which takes up 1,383 bytes. As a result, the browser wastes time downloading and rendering the CSS associated with this site. Another reason for the site’s increased loading time is its JavaScript. When a browser accesses this site, it must download 14 JavaScript files, which have a combined size of 4,244 kilobytes. Additionally, one of these JavaScript files is render blocking, which means no other resources can load until this file is finished. As a result, there is a delay in the time required for the browser to create and display the page. The last major issue is a lack of image optimization across 31 different images on the site. According to varvy.com, optimizing all these images would save more than 2000 kibibytes. In other words, optimizing these images would substantially increase the site’s loading speed.
+        </p>
+        <p>
+            To improve this site’s SEO, I would first determine which non-cached elements are updated least frequently, and thus would be the best candidates to enable caching for. Next, I would recommend combining the five CSS and 14 JavaScript files into one or two files each, as well as reducing their overall size. This would greatly increase loading speeds by decreasing the number of retrievals from the server, the downloading times, and the rendering times. Also, I would advise examining the render blocking JavaScript file to see if it can be delayed, allowing more important elements to render quicker on the page. Finally, I would suggest optimizing as many of the 31 images as possible, which would allow a browser to download them faster and in turn load the site faster. After implementing these changes, the site’s loading speed should increase, which in turn should improve the site’s search engine optimization.
+        </p>
+    </div>
+    
+    <hr>
+    
+    <!-- FOOTER -->
+    <footer>
+        <p id="copyright">
+            Copyright © 2020 Wengsing Wong<br>
+            Can't find something? Try this <a href="/mysitemap/" class="normallink">site map</a>.
+        </p>
+    </footer>
+</body>

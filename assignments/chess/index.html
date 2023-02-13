@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chessboard</title>
+    <meta name="Wengsing's Chessboard" content="Wengsing's responsive chessboard assignment for CIS 3630 (Principles of Web Design)">
+    
+    <!-- FAVICON -->
+    <link href="/media/favicon.png" rel="icon" type="image/x-icon">
+    
+    <!-- CSS -->
+    <link href="/css/wengsingwong.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- BANNER -->
+    <header id="wwbanner">
+        <p id="wwbannertext">
+            Wengsing's World
+        </p>
+    </header>
+    
+    <!-- STANDARD MENU -->
+    <ul class="standardnavigation printing">
+        <li class="navlink"><a href="/" target="_self" class="notactive">Home</a></li>
+        <li class="navlink"><a href="/favmusic/" target="_self" class="notactive">Musical Artist</a></li>
+        <li class="navlink"><a href="/favbooks/" target="_self" class="notactive">Book Series</a></li>
+        <li class="navlink"><a href="/favgames/" target="_self" class="notactive">Games</a></li>
+        <li class="navlink"><a href="/assignments/" target="_self" class="active">Assignments</a></li>
+        <li class="navlink"><a href="/faves/" target="_self" class="notactive">Table of Faves</a></li>
+        <li class="navlink"><a href="http://china2020coronavirus.com/" target="_blank" class="notactive">Angela Zhu</a></li>
+    </ul>
+
+    <!-- DROPDOWN MENU FOR SMALLER SCREENS -->
+    <ul class="smallnavigation printing">
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Menu</a>
+            <div class="dropdown-content">
+                <a href="/" target="_self" class="notactive">Home</a>
+                <a href="/favmusic/" target="_self" class="notactive">Musical Artist</a>
+                <a href="/favbooks/" target="_self" class="notactive">Book Series</a>
+                <a href="/favgames/" target="_self" class="notactive">Games</a>
+                <a href="/assignments/" target="_self" class="active">Assignments</a>
+                <a href="/faves/" target="_self" class="notactive">Table of Faves</a>
+                <a href="http://china2020coronavirus.com/" target="_blank" class="notactive">Angela Zhu</a>
+            </div>
+        </li>
+    </ul>   
+
+    <!-- CONTENT DIV -->
+    <div class="contentdiv">
+    <h1>Chessboard</h1>
+    
+    <!-- SECONDARY NAVIGATION MENU FOR ASSIGNMENTS -->
+    <ul class="standardnavigation printing">
+        <li class="navlink">
+            <a href="/" target="_self" class="notactive">My Home Page</a>
+        </li>
+        <li class="navlink">
+            <a href="http://china2020coronavirus.com/chess/" target="_blank" class="notactive">Next Student's Chessboard</a>
+        </li>
+        <li class="navlink">
+            <a href="https://validator.w3.org/nu/?showsource=yes&doc=http%3A%2F%2Fwengsingwong.com%2Fassignments%2Fchess%2F" target="_blank" class="notactive">Validator</a>
+        </li>
+        <li class="navlink">
+            <a href="../aboutme/" target="_self" class="notactive">
+                Previous Assignment (About Me)
+            </a>
+        </li>
+        <li class="navlink">
+            <a href="../websiteeval/" target="_self" class="notactive">
+                Next Assignment (Website Evaluation)
+            </a>
+        </li>
+    </ul>
+    
+    <!-- SECONDARY DROPDOWN MENU FOR SMALLER SCREENS -->
+    <ul class="smallnavigation printing">
+        <li class="dropdown amdropdown">
+            <a href="javascript:void(0)" class="dropbtn amdropbtn">HW Menu</a>
+            <div class="dropdown-content amdropdown-content">
+                <a href="/" target="_self" class="amlink">My Home Page</a>
+                <a href="http://china2020coronavirus.com/chess/" target="_self" class="amlink">Next Student's Chessboard</a>
+                <a href="https://validator.w3.org/nu/?showsource=yes&doc=http%3A%2F%2Fwengsingwong.com%2Fassignments%2Fchess%2F" target="_blank" class="amlink">W3 Validator</a>
+                <a href="../aboutme/" target="_self" class="amlink">Previous Assignment (About Me)</a>
+                <a href="../websiteeval/" target="_self" class="amlink">Next Assignment (Website Evaluation)</a>
+            </div>
+        </li>
+    </ul>     
+    
+    <!-- Chessboard -->
+    <div id="chessborder">
+        <!-- Row 1 -->
+        <div class="white"></div>
+        <div class="green"></div>
+        <div class="white"></div>
+        <div class="green">
+            <img class="chessimg" src="/media/chessimages/Black_King.png" alt="Black King">
+        </div>
+        <div class="white"></div>
+        <div class="green"></div>
+        <div class="white"></div>
+        <div class="green"></div>
+        
+        <!-- Row 2 -->
+        <div class="green"></div>
+        <div class="white"></div>
+        <div class="green"></div>
+        <div class="white"></div>
+        <div class="green"></div>
+        <div class="white"></div>
+        <div class="green">
+            <img class="chessimg" src="/media/chessimages/White_Rook.png" alt="White Rook">
+        </div>
+        <div class="white"></div>
+        
+        <!-- Row 3 -->
+        <div class="white"></div>
+        <div class="green"></div>
+        <div class="white"></div>
+        <div class="green"></div>
+        <div class="white">
+            <img class="chessimg" src="/media/chessimages/Black_Queen.png" alt="Black Queen">
+        </div>
+        <div class="green"></div>
+        <div class="white"></div>
+        <div class="green"></div>
+        
+        <!-- Row 4 -->
+        <div class="green"></div>
+        <div class="white">
+            <img class="chessimg" src="/media/chessimages/Black_Queen.png" alt="Black Queen">
+        </div>
+        <div class="green"></div>
+        <div class="white"></div>
+        <div class="green"></div>
+        <div class="white"></div>
+        <div class="green"></div>
+        <div class="white"></div>
+        
+        <!-- Row 5 -->
+        <div class="white"></div>
+        <div class="green"></div>
+        <div class="white"></div>
+        <div class="green"></div>
+        <div class="white">
+            <img class="chessimg" src="/media/chessimages/White_Pawn.png" alt="White Pawn">
+        </div>
+        <div class="green"></div>
+        <div class="white"></div>
+        <div class="green"></div>
+        
+        <!-- Row 6 -->
+        <div class="green"></div>
+        <div class="white"></div>
+        <div class="green">
+            <img class="chessimg" src="/media/chessimages/Black_Knight.png" alt="Black Knight">
+        </div>
+        <div class="white"></div>
+        <div class="green"></div>
+        <div class="white"></div>
+        <div class="green"></div>
+        <div class="white"></div>
+        
+        <!-- Row 7 -->
+        <div class="white"></div>
+        <div class="green"></div>
+        <div class="white"></div>
+        <div class="green"></div>
+        <div class="white"></div>
+        <div class="green"></div>
+        <div class="white">
+            <img class="chessimg" src="/media/chessimages/White_Bishop.png" alt="White Bishop">
+        </div>
+        <div class="green"></div>
+        
+        <!-- Row 8 -->
+        <div class="green"></div>
+        <div class="white"></div>
+        <div class="green"></div>
+        <div class="white"></div>
+        <div class="green"></div>
+        <div class="white"></div>
+        <div class="green"></div>
+        <div class="white">
+            <img class="chessimg" src="/media/chessimages/White_King.png" alt="White King">
+        </div>
+        
+        <!-- Extra div to fix collapse issue -->
+        <div id="clearfix"></div>
+        
+    </div>
+    </div>
+    
+    <hr>
+    
+    <!-- FOOTER -->
+    <footer>
+        <p id="copyright">
+            Copyright © 2020 Wengsing Wong<br>
+            Can't find something? Try this <a href="/mysitemap/" class="normallink">site map</a>.
+        </p>
+    </footer>
+</body>
+
+</html>

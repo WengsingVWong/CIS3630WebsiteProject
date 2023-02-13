@@ -1,0 +1,5 @@
+AuthUserFile /home/ttmdf2uvs7hh/.htpasswd
+AuthGroupFile /dev/null
+AuthName "Wengsing Wong - CIS 3630 (Baruch College)"
+AuthType Basic
+require valid-user
